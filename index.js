@@ -1,7 +1,7 @@
 const express = require('express');
 const dp = require('./configs/mongoose')
 
-const port = 8000;
+const port = process.env.POST || 8000;
 app = express();
 
 // it will help to parse the body
@@ -16,11 +16,10 @@ app.use((req,res,next)=>{
 app.use('/',require('./routes'))
 
 
-
-
-
 // this server start listening here
-app.listen(port,(err)=>{
-    if(err){console.log("server not connected ",err)}
-    console.log("server is up and runnning",port);
-})
+app.listen(port, (error) => {
+    if (error) console.log("server connection ERROR", error);
+    else console.log("visit application by",'\x1b[36m"CTL+Click"\x1b[0m');
+    // Second argument is inserted in place of %s
+    console.log('\x1b[33m%s\x1b[0m', `http://localhost:${port}`);  //yellow
+  });

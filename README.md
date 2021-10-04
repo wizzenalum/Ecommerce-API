@@ -1,7 +1,8 @@
 # Eccomerce-API 
-this API impliments the CRUD for product inventory. It stores name and quantity of the product. it can create, delete, update and delete the product.
+this API impliments the CRUD for product inventory. It stores name and quantity of the product. it can create, delete, update and delete the product. [Video](youtube.com/wizzenalum) to show demo and setup.
 ## How to setup on local machine
-1. To use this repository your machine should have [node](https://nodejs.org/en/), npm, [monogodb](https://docs.mongodb.com/manual/installation/) and [git](https://git-scm.com/downloads). to check version exicute these.
+To use this repository your machine should have [node](https://nodejs.org/en/), npm, [monogodb](https://docs.mongodb.com/manual/installation/) and [git](https://git-scm.com/downloads). 
+1. check pre-requisits by these.
 ```go
 node --version
 npm --version
@@ -28,6 +29,7 @@ sudo systemctl start mongod
 ```go
 npm start
 ```
+6. click [here](http://localhost:8000) or link in terminal to access your application.
 
 ## How to test this api using vs-code
 1. i assume your system has vs-code and rest-client preinstalled
@@ -37,6 +39,7 @@ npm start
 
 ## File structure
 ```sh
+Ecommerce-API
 ├── README.md   
 ├── configs 
 │   └── mongoose.js

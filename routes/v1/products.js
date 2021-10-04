@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 // importing the conrollers
-const productController = require('../controllers/products')
+const productController = require('../../controllers/products')
 
 // routes to all the crud functionality for the product model
 router.post('/create',productController.create);
