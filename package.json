@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "this API impliments the CRUD for product inventory. It stores name and quantity of the product. it can create, delete, update and delete the product. [Video](youtube.com/wizzenalum) to show demo and setup. ## How to setup on local machine To use this repository your machine should have [node](https://nodejs.org/en/), npm, [monogodb](https://docs.mongodb.com/manual/installation/) and [git](https://git-scm.com/downloads).  1. check pre-requisits by these. ```go node --version npm --version git --version ``` 2. Now clone this repository ```go git clone https://github.com/wizzenalum/Ecommerce-API.git ``` 3. Change directory to Ecomerce-API ```go cd Ecommerce-API/ ```",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -18,5 +18,14 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.7",
     "nodemon": "^2.0.13"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizzenalum/Ecommerce-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wizzenalum/Ecommerce-API/issues"
+  },
+  "homepage": "https://github.com/wizzenalum/Ecommerce-API#readme"
 }
